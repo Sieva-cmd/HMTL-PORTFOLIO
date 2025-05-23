@@ -1,0 +1,84 @@
+/* Background and general layout */
+body {
+    background-color: #151316;
+    color: white;
+    padding-left: 100px;
+    padding-top: 40px;
+    position: relative;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/* Top-right torch-light gradient overlay */
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px; /* wider reach */
+    height: 600px; /* taller reach */
+    background: radial-gradient(circle at top right, #2c373e 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+/* Name style */
+.myName {
+    color: #897bdd;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Greeting text */
+.greet {
+    font-size: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Main container for layout */
+.myContainer {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Split layout */
+.text-box,
+.image-box {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Text box positioning */
+.text-box {
+    margin-top: 120px;
+}
+
+/* Heading style */
+.text-box h1 {
+    color: #897bdd;
+    font-size: 60px;
+}
+
+/* Image styling */
+.image-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -160px;
+    position: relative;
+    z-index: 1;
+    filter: grayscale(20%);
+    mask-image: radial-gradient(circle at top right, rgba(39, 38, 38, 0) 20%, rgba(0,0,0,1) 80%);
+   -webkit-mask-image: radial-gradient(circle at top right, rgba(0,0,0,0) 20%, rgba(0,0,0,1) 80%);
+}
+.image-box {
+  position: relative;
+  overflow: hidden;
+}
